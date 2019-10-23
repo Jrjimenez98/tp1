@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bienvenido a TIME~WASTE</title>
+    <link rel="stylesheet" href="CSS/estilosFormulario.css">
+
+  </head>
+  <body>
+    <div class="contenedor">
+
+          <header>
+              <div class="logo-contenedor1">
+                  <img src="img/logo1.png" height="80" width="1000" class="tituloTec" id="tituloTec">
+              </div>
+          </header>
+
+          <div class="navegacion">
+            <nav>
+              <ul>
+            		<!--<li><a href="formulario.html">Nueva Actividad</a></li>-->
+            		<!--<li><a href="tabla.html">Ver actividades de hoy</a></li>
+            		<li><a href="grafica.html">Ver actividades del mes</a></li>-->
+            		<!--<li><a href="ayuda.html">Ayuda</a></li>-->
+            	</ul>
+           </nav>
+         </div>
+
+          <main class="contenido-principal">
+            <div class="bienvenido-inicio">
+              <p>Nueva Actividad</p>
+            </div>
+            <form class="formu">
+              <div class="parte1">
+                <label for="nombre"><b>NOMBRE DE LA ACTIVIDAD:</b></label><br>
+                <input type="text" placeholder="Nombre de la actividad" autocomplete="off" style="WIDTH: 300px; HEIGHT: 30px">
+                <br><br>
+                <label for="lugar"><b>LUGAR:</b></label><br>
+                <input type="text" placeholder="Nombre del lugar" autocomplete="off" style="WIDTH: 300px; HEIGHT: 30px">
+                <br><br>
+                <label><b>FECHA:</b></label><br>
+                <input type="date" style="WIDTH: 180px; HEIGHT: 30px">
+                <br><br>
+                <label><b>DURACIÓN:</b></label><br>
+                <input type="number" placeholder="Cantidad en horas" name="cantidad" max="24" min="1" style="WIDTH: 180px; HEIGHT: 30px">
+              </div>
+
+              <div class="parte2">
+                <label for="frecuencia"><b>FRECUENCIA:</b></label><br>
+                <select class="frecuencia">
+                  <option value="4">Siempre</option>
+                  <option value="3">Casi siempre</option>
+                  <option value="2">A veces</option>
+                  <option value="1">Casi nunca</option>
+                  <option value="0">Nunca</option>
+                </select>
+                <br><br><br>
+                <label for="lugar"><b>EVALUACIÓN:</b></label><br>
+                <input type="range" name="rango" min="1" max="3" list="lista-rango" style="WIDTH: 200px; HEIGHT: 30px">
+                <datalist id="lista-rango">
+                  <option value="1" label="Malo"></option>
+                  <option value="2" label="Regular"></option>
+                  <option value="3" label="Bueno"></option>
+                </datalist>
+                <br>(Mala, Regular, Buena)
+                <br><br><br>
+                <label for="tipoAct"><b>TIPO DE ACTIVIDAD:</b></label><br>
+                <select name="menu" size="2" style="WIDTH: 185px; HEIGHT: 44px">
+                  <option value="1">Productiva</option>
+                  <option value="0">Muerta</option>
+                </select>
+
+
+              </div>
+
+
+            <div class="botones-inicio">
+              <div class="boton1">
+                <a href="index.html" style="text-decoration: none" class="boton"> Atrás</a>
+              </div>
+              <div class="boton2">
+                <input type="reset" value="Borrar todo">
+              </div>
+              <div class="boton3">
+                <input type="submit" value="Enviar">
+              </div>
+            </div>
+            </form>
+
+          </main>
+
+    </div>
+    <footer>
+
+      <div class="pie">
+        <h3>Diseño exclusivo de Time ~ Waste</h3>
+        <div class="copy">
+        <p>Queda extrictamente prohibida la reproducción total o parcial de este sitio en cualquier soporte, salvo autorización expresa del director de la publicación. <br><br>Software exclusivamente para estudiantes &mdash; Todos los derechos reservados &copy; </p>
+        </div>
+      </div>
+
+    </footer>
+  </body>
+</html>
